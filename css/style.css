@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+.head {
+  text-align: center;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  border-top: 6px solid #bfbfbf;
+  display: flex;
+}
+
+.button-color {
+  background: #72C3DC;
+}
+
+button {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  height: 30px;
+  border: 0px;
+  border-bottom: 5px solid #2B8EAD;
+  margin-bottom: 20px;
+  background: #72c3dc;
+  cursor: pointer;
+  color: #fff;
+  height: 50px;
+  outline: none;
+}
+
+.name {
+  text-align: center;
+  margin: 20px 0;
+  width: 75%;
+  clear: both;
+}
+
+button:active {
+  border: 0px;
+  outline: none;
+}
+
+@media (min-width: 960px) {
+  body {
+    background: #EFEFEF;
+  }
+
+  .left-bar {
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .right-bar {
+    width: 30%;
+    padding: 20px;
+  }
+
+  .blocks {
+    min-width: 30.33%;
+    height: 160px;
+    text-align: center;
+    flex: 1 calc(30% - 0px);
+    font-size: 75px;
+    color: #fff;
+    line-height: 155px;
+  }
+
+  .block-light-blue {
+    background: #6F98A8;
+  }
+
+  .block-medium-blue {
+    background: #2B8EAD;
+  }
+
+  .block-dark-blue {
+    background: #2F454E;
+  }
+
+  .block-gray-color {
+    background: #BFBFBF;
+  }
+}
+
+@media (max-width: 375px) {
+  .head {
+    color: #fff;
+    background: #333333
+  }
+
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+    flex-direction: column-reverse;
+    border: 0;
+  }
+
+  .blocks {
+    background: #BFBFBF;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 41px;
+    font-weight: 700;
+  }
+
+  .block-light-blue {
+    border-left: 10px solid #6F98A8;
+    background: #EFEFEF;
+  }
+
+  .block-medium-blue {
+    border-left: 10px solid #2B8EAD;
+    background: #EFEFEF;
+  }
+
+  .block-dark-blue {
+    border-left: 10px solid #2F454E;
+    background: #EFEFEF;
+  }
+
+  .block-gray-color {
+    border-left: 10px solid #BFBFBF;
+    background: #EFEFEF;
+  }
+
+  .left-bar {
+    width: 100%;
+  }
+
+  .right-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .right-bar button {
+    width: 35%;
+  }
+
+  .name {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  button {
+    margin-bottom: 5px;
+  }
+
+  span {
+    display: block;
+  }
+}
